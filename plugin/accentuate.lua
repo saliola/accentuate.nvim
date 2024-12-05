@@ -13,7 +13,7 @@ M.colors = { "#dfff00", "#ffbf00", "#ff7f50", "#de3163",
 -- Create highlight groups for each color
 M.create_highlight_groups = function()
     for i, color in ipairs(M.colors) do
-        vim.api.nvim_set_hl(0, "AccentuatedWord" .. i, { fg="#000000", bg=color })
+        vim.api.nvim_set_hl(0, "AccentuatedWord" .. i, { fg="#000000", bg=color, italic = true })
     end
 end
 M.create_highlight_groups()
